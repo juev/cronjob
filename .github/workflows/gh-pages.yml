@@ -1,0 +1,17 @@
+name: Cronjob operations
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # Runs every 15 minuts
+
+jobs:
+  pocket-to-linkding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 🚀 Run Automation
+        run: ./getpocket.sh
+        env:
+          LINKDING_TOKEN: ${{ secrets.LINKDING_TOKEN }}
