@@ -12,6 +12,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: 🚀 Run Automation
-        run: ./getpocket.sh
+        run: bash ./getpocket.sh
         env:
           LINKDING_TOKEN: ${{ secrets.LINKDING_TOKEN }}
