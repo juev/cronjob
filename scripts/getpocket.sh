@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 FILE=./linkding_getpocket.txt
 
 curl --silent https://getpocket.com/users/juev/feed/all | xmllint --xpath '//rss/channel/item/link/text()' - > $FILE
