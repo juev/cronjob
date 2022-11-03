@@ -1,8 +1,8 @@
 name: Cronjob operations
 
-on:
-  schedule:
-    - cron: "*/15 * * * *" # Runs every 15 minuts
+#on:
+#  schedule:
+#    - cron: "*/15 * * * *" # Runs every 15 minuts
 
 jobs:
   pocket-to-linkding:
