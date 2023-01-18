@@ -3,7 +3,7 @@
 set -euo pipefail
 
 FILE=./linkding_getpocket.txt
-wget https://github.com/juev/rss-parser/releases/latest/download/rss-parser-linux-amd64 -O run
+wget --tries=0 --random-wait https://github.com/juev/rss-parser/releases/latest/download/rss-parser-linux-amd64 -O run
 chmod +x run
 
 ./run https://getpocket.com/users/juev/feed/all > $FILE
