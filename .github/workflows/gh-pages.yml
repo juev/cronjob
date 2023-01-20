@@ -7,6 +7,7 @@ on:
 jobs:
   pocket-to-linkding:
     runs-on: ubuntu-latest
+    container: juev/tools:latest
     steps:
       - uses: actions/checkout@v3
         with:
