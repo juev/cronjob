@@ -10,5 +10,5 @@ while IFS= read -r line; do
 	curl -s -X POST -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Token ${LINKDING_TOKEN}" https://link.juev.org/api/bookmarks/ -d "{\"url\":\"${line}\"}"
 done < $FILE
 
-rm run $FILE
+rm $FILE
 exit 0
