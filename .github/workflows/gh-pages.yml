@@ -17,3 +17,5 @@ jobs:
         run: bash ./scripts/getpocket.sh
         env:
           LINKDING_TOKEN: ${{ secrets.LINKDING_TOKEN }}
+      - name: 🚀 Print
+        run: echo 'Hello World!'
